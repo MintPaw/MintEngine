@@ -6,6 +6,7 @@
 #include <SDL2/SDL_opengl.h>
 
 #include "platform.h"
+#include "v8.h"
 
 #define Assert(expr) engineAssert(expr, __FILE__, __LINE__)
 #define GL_CORE
