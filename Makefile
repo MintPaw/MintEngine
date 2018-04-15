@@ -16,7 +16,7 @@ all:
 endif
 
 bWindows:
-	cmd /c "cl -MTd -Zi -EHsc -nologo -Iinclude/win32 lib/win32/*.lib src/main.cpp -Fdbin/main.pdb -Fobin/main.obj -link /DEBUG -out:bin/${GAME_NAME}.exe"
+	cmd /c "cl -MTd -Zi -EHsc -nologo -Iinclude/win32 lib/win32/*.lib src/*.cpp -Fdbin/main.pdb -Fobin/ -link /DEBUG -out:bin/${GAME_NAME}.exe"
 	cp lib/win32/SDL2-d.dll bin/SDL2.dll
 	cp lib/win32/glew32.dll bin
 	cp lib/win32/OpenAl32-d.dll bin/OpenAl32.dll
