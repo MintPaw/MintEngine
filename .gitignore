@@ -1,2 +1,4 @@
 /bin
 shell.bat
+/lib/win32debug
+/lib/win32release
